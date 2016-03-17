@@ -4,33 +4,16 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <FrameLayout
+    <com.example.leqiang.view.AutoPlayPager
+        android:id="@+id/auto_player"
         android:layout_width="match_parent"
-        android:layout_height="140dp">
-
-        <com.example.leqiang.view.AutoPlayPager
-            android:id="@+id/auto_player"
-            android:layout_width="match_parent"
-            android:layout_height="140dp"
-            android:layout_centerInParent="true"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:background="#33000000"
-            android:layout_gravity="bottom">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="我是一只小青蛙"/>
-
-        </LinearLayout>
-
-
-
-    </FrameLayout>
-
-
+        android:layout_height="140dp"
+        android:layout_centerInParent="true" />
+    <com.example.leqiang.view.CommonGridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"/>
 
 </LinearLayout>

@@ -24,16 +24,12 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener{
 
-    Toolbar mToolBar;
-    RadioGroup mRadioGroup;
+    private Toolbar mToolBar;
+    private RadioGroup mRadioGroup;
 
-    FragmentManager mFragmentManager;
-    FragmentTransaction mFragmentTransaction;
+    private FragmentManager mFragmentManager;
+    private FragmentTransaction mFragmentTransaction;
 
-    /**
-     * 资源图片
-     */
-//    private int picture[] = {R.drawable.meinv, R.drawable.yinghua, R.drawable.suolong};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,6 +58,11 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
 
     }
 
+    /**
+     * RadioButton的点击事件
+     * @param group
+     * @param checkedId
+     */
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
         FragmentManager fm=getSupportFragmentManager();
@@ -82,15 +83,5 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         }
         ft.commit();
     }
-
-//    private void getData() {
-//        data=new ArrayList<ImageView>();
-//        for (int i=0;i<picture.length;i++){
-//            ImageView view=new ImageView(this);
-//            view.setImageResource(picture[i]);
-//            data.add(view);
-//        }
-//    }
-
 
 }
