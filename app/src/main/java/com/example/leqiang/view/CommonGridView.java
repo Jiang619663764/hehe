@@ -11,6 +11,7 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.example.leqiang.R;
 
@@ -94,17 +95,20 @@ public class CommonGridView extends LinearLayout {
                 convertView = inflater.inflate(R.layout.item_gridview, null);
                 holder = new ViewHolder();
                 holder.image = (ImageView) convertView.findViewById(R.id.img_gv);
+                holder.text=(TextView)convertView.findViewById(R.id.txt_gv);
                 convertView.setTag(holder);
             } else {
                 holder = (ViewHolder) convertView.getTag();
             }
             holder.image.setImageResource(mData.get(position));
+            holder.text.setText("测试");
             return convertView;
         }
     }
 
     public class ViewHolder {
         ImageView image;
+        TextView text;
     }
 
     public static interface GridViewListener {

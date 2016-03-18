@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/txt_title_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:text="注册"/>
+    <EditText
+        android:id="@+id/edt_user_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_title_reg"
+        android:layout_marginTop="85dp"
+        android:hint="请输入昵称"/>
+    <EditText
+        android:id="@+id/edt_psw_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_user_reg"
+        android:layout_marginTop="20dp"
+        android:hint="请输入密码"/>
+    <Button
+        android:id="@+id/btn_complet_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_psw_reg"
+        android:layout_marginTop="35dp"
+        android:textColor="#ffffff"
+        android:background="#ff0000"
+        android:textSize="24sp"
+        android:text="完成"/>
+</RelativeLayout>
