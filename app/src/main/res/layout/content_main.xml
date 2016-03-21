@@ -51,7 +51,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:button="@null"
-                android:text="知识"
+                android:text="抢"
                 android:textSize="20sp"
                 android:textColor="#ffffff"/>
             <RadioButton
