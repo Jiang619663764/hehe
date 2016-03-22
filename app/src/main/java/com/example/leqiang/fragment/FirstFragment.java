@@ -30,9 +30,7 @@ public class FirstFragment extends Fragment {
      * gridview资源图片
      */
     private int gridPicture[] = {R.mipmap.ic_launcher, R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher, R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher, R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,R.mipmap.ic_launcher,};
+            R.mipmap.ic_launcher, R.mipmap.ic_launcher};
 
     /**
      * 存放Viewpager图片资源的集合

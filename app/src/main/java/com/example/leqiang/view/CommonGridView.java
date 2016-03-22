@@ -48,7 +48,7 @@ public class CommonGridView extends LinearLayout {
         mData=data;
         mListener=listener;
         mAdapter=new GridAdapter(mContext,mData);
-        mGridView.setNumColumns(data.size()/2);
+        mGridView.setNumColumns(4);
         mGridView.setAdapter(mAdapter);
         mGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

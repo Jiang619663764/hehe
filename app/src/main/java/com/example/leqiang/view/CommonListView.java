@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.example.leqiang.R;
 import com.example.leqiang.modle.Product;
+import com.example.leqiang.util.ImageLoader;
 
 import java.util.List;
 
@@ -53,9 +54,12 @@ public class CommonListView extends LinearLayout {
 
         private List<Product> mList;
 
+        private ImageLoader mImageLoader;
+
         public ListViewAdapter(Context context, List<Product> list) {
             mContext = context;
             mList = list;
+            mImageLoader=new ImageLoader();
         }
 
         @Override
@@ -88,9 +92,15 @@ public class CommonListView extends LinearLayout {
             } else {
                 holder = (ViewHolder) convertView.getTag();
             }
+
+            holder.pictureUrl.setImageResource(R.mipmap.ic_launcher);
+
+//            String url=mList.get(position).getPictureUrl();
+//            holder.pictureUrl.setTag(url);
+//            mImageLoader.showImageByAsyncTask(holder.pictureUrl,url);
+
             holder.name.setText(mList.get(position).getName());
             holder.price.setText("￥" + mList.get(position).getPrice());
-            holder.pictureUrl.setImageResource(R.mipmap.ic_launcher);
             return convertView;
         }
     }

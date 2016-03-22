@@ -102,7 +102,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btn_login:
+            case R.id.btn_login://登录
                 checkInfo();
                 Intent intent=new Intent(LoginActivity.this, MainActivity.class);
                 intent.putExtra("fragment",4);
@@ -112,7 +112,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 break;
             case R.id.forget_psw_login:
                 break;
-            case R.id.sign_up_login:
+            case R.id.sign_up_login://短信验证工能
                 final RegisterPage registerPage = new RegisterPage();
                 //注册回调事件
                 registerPage.setRegisterCallback(new EventHandler() {

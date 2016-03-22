@@ -6,8 +6,19 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/third_frg_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/ic_launcher"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="购物车木有东西啦"
+        android:textSize="30sp"/>
+
+    <com.example.leqiang.view.CommonListView
+        android:id="@+id/shopping_list_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:visibility="gone"></com.example.leqiang.view.CommonListView>
 
 </FrameLayout>
