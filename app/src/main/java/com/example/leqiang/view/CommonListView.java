@@ -43,6 +43,7 @@ public class CommonListView extends LinearLayout {
     }
 
     public void addToList(List<Product> data) {
+
         mData = data;
         mAdapter=new ListViewAdapter(mContext, mData);
         mListView.setAdapter(mAdapter);
@@ -110,4 +111,5 @@ public class CommonListView extends LinearLayout {
         private TextView price;
         private ImageView pictureUrl;
     }
+
 }

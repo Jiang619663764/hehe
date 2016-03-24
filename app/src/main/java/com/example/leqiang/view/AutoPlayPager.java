@@ -79,7 +79,7 @@ public class AutoPlayPager extends LinearLayout {
     };
 
     public AutoPlayPager(Context context) {
-        super(context);
+        this(context,null);
     }
 
     public AutoPlayPager(Context context, AttributeSet attrs) {

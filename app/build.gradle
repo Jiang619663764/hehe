@@ -29,6 +29,13 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.2.0'
     compile 'com.android.support:design:23.2.0'
+    //使用短信验证添加的依赖
     compile name:'SMSSDK-2.0.2',ext:'aar'
     compile name:'SMSSDKGUI-2.0.2',ext:'aar'
+    //使用BGARefreshLayout-Android要添加的依赖
+    compile 'com.android.support:recyclerview-v7:23.2.0'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'cn.bingoogolapple:bga-refreshlayout:1.0.0@aar'
+    //实现广告条轮播的依赖
+    compile 'cn.bingoogolapple:bga-banner:2.0.2@aar'
 }
